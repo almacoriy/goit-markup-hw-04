@@ -1,0 +1,446 @@
+:root {
+    --main-text-color: #757575;
+    --secondary-text-color: #212121;
+    --accent-link-color: #2196f3;
+    --main-bg-color: #ffffff;
+    --secondary-bg-color: #f5f4fa;
+    --hero-footer-bg-color: #2f303a;
+
+    --section-padding: 94px;
+    --card-set-gap: 30px;
+}
+
+/* -------Ресет стилей------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
+}
+
+/* -------Снимаем стили списков------ */
+.list {
+    list-style: none;
+}
+
+/* -------Снимаем стили ссылок------ */
+.link {
+    text-decoration: none;
+}
+
+/* -------Задаем стили картинкам------ */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* -------Скрываем заголовок секции------- */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* -------Контейнер для секций------- */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* -------Паддинги для секций------- */
+.section {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+/* -------Шапка------- */
+.header {
+    border-color: var(--main-bg-color);
+    border-bottom: 1px solid #ececec;
+}
+
+.header > .container {
+    display: flex;
+    align-items: center;
+}
+.header-navigation {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.logo .accent {
+    color: #2196f3;
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-link,
+.header-contacts-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+
+.header-link.active-page {
+    color: var(--accent-link-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--accent-link-color);
+}
+
+/* -------Contacts------- */
+.header-contacts {
+    display: flex;
+    align-items: center;
+}
+
+.header-contacts {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.header-contacts-link {
+    color: var(--main-text-color);
+}
+
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+    color: var(--accent-link-color);
+}
+
+.header-contacts-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+/* -------Герой------- */
+.hero {
+    text-align: center;
+    background: var(--hero-footer-bg-color);
+}
+
+.hero > .container {
+    padding-top: calc(200px - var(--section-padding));
+    padding-bottom: calc(200px - var(--section-padding));
+}
+
+.hero-title {
+    margin-bottom: 30px;
+    width: 696px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.hero-button {
+    margin: 0 auto;
+    min-width: 200px;
+    height: 50px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    background: #2196f3;
+
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #188ce8;
+}
+
+/* -------Особенности------- */
+.features {
+    padding-bottom: 0;
+}
+
+.features-list {
+    display: flex;
+    align-items: center;
+}
+
+.features-item {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.features-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.features-title {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+}
+
+.features-item-text {
+    width: 270px;
+
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/* -------Чем мы занимаемся------- */
+.works-title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.67;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+
+.works-list {
+    display: flex;
+}
+
+.works-item {
+    width: 370px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.works-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* -------Наша команда------- */
+.team {
+    background-color: var(--secondary-bg-color);
+}
+
+.team-list {
+    display: flex;
+}
+
+.team-title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+
+.team-item {
+    border-bottom: 1px solid transparent;
+    border-radius: 0px 0px 4px 4px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-item-content {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.team-item-title {
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+}
+
+.team-item-text {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+/* -------Футер------- */
+.footer {
+    background-color: var(--hero-footer-bg-color);
+}
+
+.footer > .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-logo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+
+.footer-logo > .accent {
+    color: #2196f3;
+}
+
+.footer-list {
+    font-style: normal;
+
+    margin-top: 20px;
+}
+
+.footer-address,
+.footer-contacts-link {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+
+.footer-contacts-link {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-address:hover,
+.footer-address:focus,
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+    color: var(--accent-link-color);
+}
+
+/* -------Навигация для секции Портфолио------- */
+.portfolio-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+}
+
+.portfolio-item {
+    margin: 0;
+}
+
+.portfolio-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.portfolio-button {
+    padding: 6px 22px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: var(--secondary-bg-color);
+    color: #212121;
+
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+    background-color: var(--accent-link-color);
+    color: #ffffff;
+}
+
+/* -------Портфолио Примеры работ------- */
+.card-set-title {
+    margin-bottom: 4px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--secondary-text-color);
+}
+
+.card-set-text {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}
+
+/* -------Сетка для карточек Портфолио------- */
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-right: calc(-1 * var(--card-set-gap));
+    margin-bottom: calc(-1 * var(--card-set-gap));
+}
+
+.card-set > .card-set-item {
+    flex-basis: calc(100% / 3 - var(--card-set-gap));
+
+    margin-right: var(--card-set-gap);
+    margin-bottom: var(--card-set-gap);
+}
+
+.card-set-content {
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+    border-top: unset;
+}
