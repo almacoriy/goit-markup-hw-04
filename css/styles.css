@@ -206,7 +206,7 @@ img {
     color: #ffffff;
     background: #2196f3;
 
-    border: 1px solid transparent;
+    border: none;
     border-radius: 4px;
     cursor: pointer;
 }
