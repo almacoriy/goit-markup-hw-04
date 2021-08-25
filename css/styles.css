@@ -163,6 +163,9 @@ img {
 .hero {
     text-align: center;
     background: var(--hero-footer-bg-color);
+
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .overlay {
@@ -175,11 +178,6 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}
-
-.hero > .container {
-    padding-top: calc(200px - var(--section-padding));
-    padding-bottom: calc(200px - var(--section-padding));
 }
 
 .hero-title {
@@ -361,9 +359,7 @@ img {
 /* -------Футер------- */
 .footer {
     background-color: var(--hero-footer-bg-color);
-}
 
-.footer > .container {
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -381,10 +377,16 @@ img {
     color: #2196f3;
 }
 
+.address {
+    margin-top: 20px;
+}
+
 .footer-list {
     font-style: normal;
+}
 
-    margin-top: 20px;
+.footer-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .footer-address,
@@ -395,10 +397,6 @@ img {
     color: #ffffff;
 }
 
-.footer-contacts-link {
-    color: rgba(255, 255, 255, 0.6);
-}
-
 .footer-address:hover,
 .footer-address:focus,
 .footer-contacts-link:hover,
@@ -406,12 +404,15 @@ img {
     color: var(--accent-link-color);
 }
 
+.footer-contacts-link {
+    color: rgba(255, 255, 255, 0.6);
+}
+
 /* -------Навигация для секции Портфолио------- */
 .portfolio-list {
     display: flex;
     justify-content: center;
-    padding-bottom: 16px;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 
 .portfolio-item {
