@@ -227,6 +227,34 @@ img {
     margin-right: 0;
 }
 
+.features-item::before {
+    content: "";
+    display: block;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--secondary-bg-color);
+
+    margin-bottom: 30px;
+}
+
+.icon-antenna::before {
+    background-image: url(../images/features/antenna.svg);
+}
+
+.icon-clock::before {
+    background-image: url(../images/features/clock.svg);
+}
+
+.icon-diagram::before {
+    background-image: url(../images/features/diagram.svg);
+}
+
+.icon-astronaut::before {
+    background-image: url(../images/features/astronaut.svg);
+}
+
 .features-item:not(:last-child) {
     margin-right: 30px;
 }
@@ -362,6 +390,25 @@ img {
     padding-bottom: 60px;
 }
 
+.footer .container {
+    display: flex;
+}
+
+.footer-left,
+.footer-right {
+    margin: 0;
+    align-self: center;
+}
+
+.footer-left {
+    width: 231px;
+    margin-right: 70px;
+}
+
+.footer-right {
+    width: 206px;
+}
+
 .footer-logo {
     font-family: Raleway;
     font-weight: 700;
@@ -404,6 +451,50 @@ img {
 
 .footer-contacts-link {
     color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    margin-bottom: 20px;
+}
+
+.footer-icon-list {
+    display: flex;
+    justify-content: center;
+    height: 44px;
+}
+
+.footer-icon-list::before {
+    content: "";
+    display: block;
+    height: 44px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon-instagram::before {
+    background-image: url(../images/footer/instagram.svg);
+}
+
+.footer-icon-twitter::before {
+    background-image: url(../images/footer/twitter.svg);
+}
+
+.footer-icon-facebook::before {
+    background-image: url(../images/footer/facebook.svg);
+}
+
+.footer-icon-linkedin::before {
+    background-image: url(../images/footer/linkedin.svg);
 }
 
 /* -------Навигация для секции Портфолио------- */
