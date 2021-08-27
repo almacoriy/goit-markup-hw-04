@@ -8,6 +8,9 @@
 
     --section-padding: 94px;
     --card-set-gap: 30px;
+
+    --first-icon-color: #afb1b8;
+    --secondary-icon-color: #ffffff;
 }
 
 /* -------Ресет стилей------- */
@@ -372,14 +375,40 @@ img {
     color: var(--secondary-text-color);
 }
 
-.clients-logo-list {
+.clients-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.clients-logo-item {
-    margin-left: 0;
-    margin-right: 0;
+.clients-item {
+    width: 170px;
+    height: 92px;
+}
+
+.clients-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--first-icon-color);
+    border-radius: 4px;
+}
+
+.clients-icon {
+    fill: var(--first-icon-color);
+}
+
+.clients-link:hover,
+.clients-link:focus,
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+    fill: var(--accent-link-color);
+    border-color: var(--accent-link-color);
 }
 
 /* -------Футер------- */
@@ -394,6 +423,11 @@ img {
     display: flex;
 }
 
+.footer-left {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .footer-left,
 .footer-right {
     margin: 0;
@@ -403,10 +437,6 @@ img {
 .footer-left {
     width: 231px;
     margin-right: 70px;
-}
-
-.footer-right {
-    width: 206px;
 }
 
 .footer-logo {
@@ -453,8 +483,13 @@ img {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-right {
+    width: 206px;
+    padding-top: 72px;
+    padding-bottom: 100px;
+}
+
 .footer-title {
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -465,36 +500,39 @@ img {
     margin-bottom: 20px;
 }
 
-.footer-icon-list {
+.right-list {
     display: flex;
     justify-content: center;
+}
+
+.right-item {
+    width: 44px;
     height: 44px;
 }
 
-.footer-icon-list::before {
-    content: "";
-    display: block;
-    height: 44px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.right-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.right-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background-color: rgba(255, 255, 255, 0.1);
+
+    border-radius: 50%;
 }
 
-.footer-icon-instagram::before {
-    background-image: url(../images/footer/instagram.svg);
+.right-icon {
+    fill: var(--secondary-icon-color);
 }
 
-.footer-icon-twitter::before {
-    background-image: url(../images/footer/twitter.svg);
-}
-
-.footer-icon-facebook::before {
-    background-image: url(../images/footer/facebook.svg);
-}
-
-.footer-icon-linkedin::before {
-    background-image: url(../images/footer/linkedin.svg);
+.right-link:hover,
+.right-link:focus {
+    background-color: var(--accent-link-color);
 }
 
 /* -------Навигация для секции Портфолио------- */
