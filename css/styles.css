@@ -228,36 +228,25 @@ img {
     margin-right: 0;
 }
 
-.features-item::before {
-    content: "";
-    display: block;
-    height: 120px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--secondary-bg-color);
-
-    margin-bottom: 30px;
-    border-radius: 4px;
-}
-
-.icon-antenna::before {
-    background-image: url(../images/features/antenna.svg);
-}
-
-.icon-clock::before {
-    background-image: url(../images/features/clock.svg);
-}
-
-.icon-diagram::before {
-    background-image: url(../images/features/diagram.svg);
-}
-
-.icon-astronaut::before {
-    background-image: url(../images/features/astronaut.svg);
-}
-
 .features-item:not(:last-child) {
     margin-right: 30px;
+}
+
+.features-thumb {
+    background-color: var(--secondary-bg-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.features-icon {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .features-title {
@@ -339,7 +328,7 @@ img {
 .team-item-content {
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 16px;
 }
 
 .team-item-title {
@@ -356,6 +345,50 @@ img {
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+}
+
+/* -------Ссылки на соцсети------- */
+.team-socials {
+    width: 206px;
+    padding-bottom: 30px;
+}
+
+.team-socials-list {
+    display: flex;
+}
+
+.team-socials-item {
+    width: 44px;
+    height: 44px;
+}
+
+.team-socials-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team-socials-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+}
+
+.team-icon {
+    margin-left: 0;
+    margin-right: 0;
+
+    fill: var(--first-icon-color);
+}
+
+.team-socials-link:hover,
+.team-socials-link:focus,
+.team-socials-link:hover .team-icon,
+.team-socials-link:hover .team-icon {
+    fill: var(--secondary-icon-color);
+    background-color: var(--accent-link-color);
 }
 
 /* -------Постоянные клиенты------- */
