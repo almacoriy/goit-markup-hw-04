@@ -176,9 +176,7 @@ img {
     margin-right: auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/background-header.jpg);
-    background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
 }
 
 .hero-title {
@@ -234,7 +232,6 @@ img {
     content: "";
     display: block;
     height: 120px;
-    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--secondary-bg-color);
@@ -378,7 +375,6 @@ img {
 
 .clients-list {
     display: flex;
-    justify-content: center;
 }
 
 .clients-item {
@@ -401,6 +397,8 @@ img {
 }
 
 .clients-icon {
+    margin-left: 0;
+    margin-right: 0;
     fill: var(--first-icon-color);
 }
 
@@ -505,7 +503,6 @@ img {
 
 .right-list {
     display: flex;
-    justify-content: center;
 }
 
 .right-item {
@@ -530,6 +527,8 @@ img {
 }
 
 .right-icon {
+    margin-left: 0;
+    margin-right: 0;
     fill: var(--secondary-icon-color);
 }
 
