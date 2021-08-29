@@ -74,6 +74,7 @@ img {
 }
 
 /* -------Шапка------- */
+
 .header {
     border-color: var(--main-bg-color);
     border-bottom: 1px solid #ececec;
@@ -138,6 +139,7 @@ img {
 }
 
 /* -------Contacts------- */
+
 .header-contacts {
     display: flex;
     align-items: center;
@@ -183,6 +185,7 @@ img {
 }
 
 /* -------Герой------- */
+
 .hero {
     text-align: center;
     background: var(--hero-footer-bg-color);
@@ -191,7 +194,6 @@ img {
     padding-bottom: 200px;
 
     max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -234,6 +236,7 @@ img {
 }
 
 /* -------Особенности------- */
+
 .features {
     padding-bottom: 0;
 }
@@ -289,6 +292,7 @@ img {
 }
 
 /* -------Чем мы занимаемся------- */
+
 .works-title {
     margin-bottom: 50px;
 
@@ -315,6 +319,7 @@ img {
 }
 
 /* -------Наша команда------- */
+
 .team {
     background-color: var(--secondary-bg-color);
 }
@@ -339,16 +344,21 @@ img {
     border-radius: 0px 0px 4px 4px;
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    background-color: var(--main-bg-color);
 }
 
 .team-item:not(:last-child) {
     margin-right: 30px;
 }
 
+.team-image {
+    margin-bottom: 30px;
+}
+
 .team-item-content {
     text-align: center;
-    padding-top: 30px;
-    margin-bottom: 16px;
+    margin-bottom: 30px;
 }
 
 .team-item-title {
@@ -362,19 +372,18 @@ img {
 }
 
 .team-item-text {
+    margin-bottom: 16px;
+
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
 }
 
 /* -------Ссылки на соцсети------- */
-.team-socials {
-    width: 206px;
-    padding-bottom: 30px;
-}
 
 .team-socials-list {
     display: flex;
+    width: 206px;
 }
 
 .team-socials-item {
@@ -416,6 +425,7 @@ img {
 }
 
 /* -------Постоянные клиенты------- */
+
 .clients-title {
     display: block;
     margin-left: 0;
@@ -468,6 +478,7 @@ img {
 }
 
 /* -------Футер------- */
+
 .footer {
     background-color: var(--hero-footer-bg-color);
 
@@ -479,20 +490,15 @@ img {
     display: flex;
 }
 
-/* -------Левая секция футера------- */
-.footer-left {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
 .footer-left,
 .footer-right {
     margin: 0;
-    align-self: center;
+    align-self: baseline;
 }
 
+/* -------Левая секция футера------- */
+
 .footer-left {
-    width: 231px;
     margin-right: 70px;
 }
 
@@ -541,11 +547,6 @@ img {
 }
 
 /* -------Правая секция футера------- */
-.footer-right {
-    width: 206px;
-    padding-top: 72px;
-    padding-bottom: 100px;
-}
 
 .footer-title {
     font-weight: 700;
@@ -595,6 +596,7 @@ img {
 }
 
 /* -------Навигация для секции Портфолио------- */
+
 .portfolio-list {
     display: flex;
     justify-content: center;
@@ -633,6 +635,7 @@ img {
 }
 
 /* -------Портфолио Примеры работ------- */
+
 .card-set-title {
     margin-bottom: 4px;
 
@@ -651,6 +654,7 @@ img {
 }
 
 /* -------Сетка для карточек Портфолио------- */
+
 .card-set {
     display: flex;
     flex-wrap: wrap;
@@ -672,7 +676,11 @@ img {
     border-top: unset;
 }
 
-.card-set-item:hover,
-.card-set-item:focus {
+.card-set-link {
+    display: block;
+}
+
+.card-set-link:hover,
+.card-set-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
