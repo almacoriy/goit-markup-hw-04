@@ -115,9 +115,9 @@ img {
     margin-right: 50px;
 }
 
-.header-link,
-.header-contacts-link {
-    display: block;
+.header-link {
+    display: inline-flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
 
@@ -125,7 +125,7 @@ img {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--secondary-text-color);
 }
 
 .header-link.active-page {
@@ -153,8 +153,15 @@ img {
 }
 
 .header-contacts-link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 
     color: var(--main-text-color);
 }
