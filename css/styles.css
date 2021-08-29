@@ -65,7 +65,6 @@ img {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    outline: 2px solid tomato;
 }
 
 /* -------Паддинги для секций------- */
@@ -149,8 +148,21 @@ img {
     margin-left: auto;
 }
 
+.header-contacts-item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .header-contacts-link {
+    display: flex;
+    align-items: center;
+
     color: var(--main-text-color);
+}
+
+.header-icon {
+    margin-right: 10px;
+
+    fill: currentColor;
 }
 
 .header-contacts-link:hover,
@@ -158,8 +170,9 @@ img {
     color: var(--accent-link-color);
 }
 
-.header-contacts-item:not(:last-child) {
-    margin-right: 50px;
+.header-contacts-link:hover .header-icon,
+.header-contacts-link:focus .heder-icon {
+    fill: currentColor;
 }
 
 /* -------Герой------- */
@@ -374,21 +387,25 @@ img {
     align-items: center;
 
     border-radius: 50%;
+    color: var(--first-icon-color);
 }
 
 .team-icon {
     margin-left: 0;
     margin-right: 0;
 
-    fill: var(--first-icon-color);
+    fill: currentColor;
 }
 
 .team-socials-link:hover,
-.team-socials-link:focus,
+.team-socials-link:focus {
+    color: var(--secondary-icon-color);
+    background-color: var(--accent-link-color);
+}
+
 .team-socials-link:hover .team-icon,
 .team-socials-link:hover .team-icon {
-    fill: var(--secondary-icon-color);
-    background-color: var(--accent-link-color);
+    fill: currentColor;
 }
 
 /* -------Постоянные клиенты------- */
