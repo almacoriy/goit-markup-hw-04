@@ -358,6 +358,8 @@ img {
 
 .team-item-content {
     text-align: center;
+    padding-left: 32px;
+    padding-right: 32px;
     margin-bottom: 30px;
 }
 
@@ -383,7 +385,6 @@ img {
 
 .team-socials-list {
     display: flex;
-    width: 206px;
 }
 
 .team-socials-item {
